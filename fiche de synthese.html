@@ -1,0 +1,19 @@
+<p>Fiche de synthese :</p>
+
+<p>1 : Partie en cours<p>  
+But : Test pour v&eacute;rifier si la partie est en cours </br>
+Instruction : assert game.getGameResult() == 2 , &quot;La partie est termin&eacute;e&quot; </br>
+Condition de r&eacute;ussite : la valeur retourn&eacute;e doit &ecirc;tre 2 </br>
+Echec : Affichage du message : &quot;La partie est termin&eacute;e&quot;
+
+<p>2 : Non existence d'un jeu d'apprentissage<p> 
+But : Test pour v&eacute;rifier si un jeu d'apprentissage est inexistant </br>
+Instruction : assert not game.getTrainingHistory() , &quot;Un historique d'apprentissage est disponible&quot; </br>
+Condition de r&eacute;ussite : la valeur retourn&eacute;e doit &ecirc;tre vide (cette valeur : []) </br>
+Echec : Affichage du message : &quot;La partie est termin&eacute;e&quot;
+
+<p>3 : Existence de la m&eacute;morisation d'une partie<p> 
+But : Test pour v&eacute;rifier si une m&eacute;morisation d'une partie existe </br>
+Instruction : assert game.getAvailableMoves() , &quot;La m&eacute;morisation d'une partie est inexistante&quot; </br>
+Condition de r&eacute;ussite : la valeur retourn&eacute;e ne doit pas &ecirc;tre vide (pas cette valeur : []) </br>
+Echec : Affichage du message : &quot;La m&eacute;morisation d'une partie est inexistante&quot;
